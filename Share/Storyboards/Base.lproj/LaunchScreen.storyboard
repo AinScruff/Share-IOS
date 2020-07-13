@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h15-6g-mJG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zq0-by-UWO">
+            <objects>
+                <viewController id="h15-6g-mJG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pmP-Fr-jL5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taxi2" translatesAutoresizingMaskIntoConstraints="NO" id="ozQ-l9-YG3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjc-rl-pWi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2GP-zV-lHA">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rsz_21logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="AgB-MY-Ghc">
+                                            <rect key="frame" x="112.5" y="268.5" width="150" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="LDs-P7-Pwk"/>
+                                                <constraint firstAttribute="height" constant="150" id="Pu0-UR-1y9"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44815753749999998" green="0.62459117939999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wjc-rl-pWi" firstAttribute="leading" secondItem="56A-xB-O18" secondAttribute="leading" id="1gU-6S-lmk"/>
+                            <constraint firstItem="56A-xB-O18" firstAttribute="trailing" secondItem="wjc-rl-pWi" secondAttribute="trailing" id="8Kg-8b-jbw"/>
+                            <constraint firstItem="AgB-MY-Ghc" firstAttribute="centerY" secondItem="56A-xB-O18" secondAttribute="centerY" id="Sfa-np-I2O"/>
+                            <constraint firstItem="AgB-MY-Ghc" firstAttribute="centerX" secondItem="56A-xB-O18" secondAttribute="centerX" id="XVC-s0-DYY"/>
+                            <constraint firstItem="ozQ-l9-YG3" firstAttribute="leading" secondItem="56A-xB-O18" secondAttribute="leading" id="cHh-4S-smy"/>
+                            <constraint firstItem="56A-xB-O18" firstAttribute="bottom" secondItem="ozQ-l9-YG3" secondAttribute="bottom" id="itc-Sv-bFN"/>
+                            <constraint firstItem="56A-xB-O18" firstAttribute="top" secondItem="wjc-rl-pWi" secondAttribute="top" constant="20" id="nq1-Le-7no"/>
+                            <constraint firstItem="56A-xB-O18" firstAttribute="bottom" secondItem="wjc-rl-pWi" secondAttribute="bottom" id="r6l-L6-Uvj"/>
+                            <constraint firstItem="56A-xB-O18" firstAttribute="top" secondItem="ozQ-l9-YG3" secondAttribute="top" constant="20" id="ru1-Cx-z3i"/>
+                            <constraint firstItem="56A-xB-O18" firstAttribute="trailing" secondItem="ozQ-l9-YG3" secondAttribute="trailing" id="zej-FL-Led"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="56A-xB-O18"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rs2-MN-i8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rsz_21logo.png" width="120" height="120"/>
+        <image name="taxi2" width="852" height="480"/>
+    </resources>
+</document>

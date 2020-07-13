@@ -2,20 +2,39 @@
 //  AppDelegate.swift
 //  Share
 //
-//  Created by Caryl Rabanos on 19/08/2018.
+//  Created by Caryl Rabanos on 04/09/2018.
 //  Copyright © 2018 Caryl Rabanos. All rights reserved.
 //
 
 import UIKit
-
+import Firebase
+import GoogleMaps
+import GooglePlaces
+import UserNotifications
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+    class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    var googleApiKey = "AIzaSyBx6cn5u2IGM0k1bn5Gk6DkYqyL74Q6xzA"
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
+    
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self as? UNUserNotificationCenterDelegate
+        center.requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { (granted , error) in
+            if granted{
+                print("Permission Granted")
+            }else{
+                print("Deneid")
+            }
+            
+        })
+        
+        FirebaseApp.configure()
+        GMSServices.provideAPIKey(googleApiKey)
+        GMSPlacesClient.provideAPIKey(googleApiKey)
         return true
     }
 
@@ -42,5 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    
 }
+
 
