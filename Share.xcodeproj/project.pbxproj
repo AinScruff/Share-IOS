@@ -45,6 +45,8 @@
 		89D4106F219F08390055C551 /* SettingsSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D4106E219F08390055C551 /* SettingsSectionTableViewCell.swift */; };
 		89E2A026218C98A30080083D /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2A025218C98A30080083D /* ForgotPasswordViewController.swift */; };
 		89E2A028218CBA4F0080083D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2A027218CBA4F0080083D /* RegisterViewController.swift */; };
+		89E5959524BCD516001ED95B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E5959424BCD516001ED95B /* Extensions.swift */; };
+		89E5959724BCD51D001ED95B /* Travel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E5959624BCD51D001ED95B /* Travel.storyboard */; };
 		89ECA1542178F54200D3F7A5 /* AccountViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ECA1532178F54200D3F7A5 /* AccountViewTableViewCell.swift */; };
 		89F81104227346810000BAD9 /* RateSharerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F81103227346810000BAD9 /* RateSharerViewController.swift */; };
 		89F811062273475A0000BAD9 /* RateSharerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F811052273475A0000BAD9 /* RateSharerTableViewCell.swift */; };
@@ -139,6 +141,8 @@
 		89D4106E219F08390055C551 /* SettingsSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSectionTableViewCell.swift; sourceTree = "<group>"; };
 		89E2A025218C98A30080083D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		89E2A027218CBA4F0080083D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		89E5959424BCD516001ED95B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		89E5959624BCD51D001ED95B /* Travel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Travel.storyboard; sourceTree = "<group>"; };
 		89ECA1532178F54200D3F7A5 /* AccountViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewTableViewCell.swift; sourceTree = "<group>"; };
 		89F81103227346810000BAD9 /* RateSharerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateSharerViewController.swift; sourceTree = "<group>"; };
 		89F811052273475A0000BAD9 /* RateSharerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateSharerTableViewCell.swift; sourceTree = "<group>"; };
@@ -314,6 +318,7 @@
 		89B984C724BCAD44007AA916 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				89E5959424BCD516001ED95B /* Extensions.swift */,
 				89FE25D6223D6954004F7B99 /* ActivitySpinner.swift */,
 				89FF864B2258CF5800DC9CDA /* TableViewHelper.swift */,
 				89FF86492258CA1400DC9CDA /* IBDesignableHelper.swift */,
@@ -442,6 +447,7 @@
 			children = (
 				40FB4615213EDCA7006490C7 /* Main.storyboard */,
 				893F96CA21FCC3D400B082A5 /* Account.storyboard */,
+				89E5959624BCD51D001ED95B /* Travel.storyboard */,
 				89FBBF3221FCA9F5002774DB /* MyRoom.storyboard */,
 				89FBBF3421FCAA07002774DB /* History.storyboard */,
 				40FB461A213EDCAC006490C7 /* LaunchScreen.storyboard */,
@@ -589,6 +595,7 @@
 				893F96CB21FCC3D400B082A5 /* Account.storyboard in Resources */,
 				89FBBF3321FCA9F5002774DB /* MyRoom.storyboard in Resources */,
 				40FB4617213EDCA7006490C7 /* Main.storyboard in Resources */,
+				89E5959724BCD51D001ED95B /* Travel.storyboard in Resources */,
 				89FBBF3521FCAA07002774DB /* History.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -752,6 +759,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89954AD8225903CA001204E3 /* TravelCameraTableViewController.swift in Sources */,
+				89E5959524BCD516001ED95B /* Extensions.swift in Sources */,
 				89D4106B219F05FA0055C551 /* ChangePasswordViewController.swift in Sources */,
 				89FF09BA217B7B67007D30B2 /* AccountHeaderTableViewCell.swift in Sources */,
 				89FF8B30227AD6D400F761A8 /* SharerProfileViewController.swift in Sources */,
